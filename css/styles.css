@@ -1,0 +1,270 @@
+a {
+  color: #c4ccd2;
+}
+a:hover {
+  color: #626d72;
+  text-decoration: none;
+  transition: 0.25s;
+}
+a:not(:hover) {
+  transition: 0.25s;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-control {
+  box-shadow: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+label {
+  font-weight: normal;
+}
+textarea:focus,
+input:focus {
+  box-shadow: none;
+}
+*:focus,
+*:visited,
+a:focus {
+  outline: none;
+}
+/*---------------*/
+mark {
+  background: none;
+  color: #e1eff1;
+  padding: 0 5px;
+}
+.center-el {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 980px;
+}
+.sidebar {
+  float: left;
+  margin-right: 10px;
+  width: 250px;
+}
+.content {
+  overflow: hidden;
+}
+/*----fonts----*/
+/*---general---*/
+/*---colors----*/
+body,
+html {
+  background-color: #e1eff1;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*-----placeholder-----*/
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+:focus::-moz-placeholder {
+  color: transparent;
+}
+:focus:-moz-placeholder {
+  color: transparent;
+}
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+::-webkit-input-placeholder {
+  color: #c4ccd2;
+}
+::-moz-placeholder {
+  color: #c4ccd2;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #c4ccd2;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #c4ccd2;
+}
+.rotate-180 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.btn {
+  background-color: #ffffff;
+  border: #c4ccd2 1px solid;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px #c4ccd2;
+  display: block;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.check {
+  background-color: #ffffff;
+}
+.check__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.check__item {
+  border-bottom: #cccccc 1px solid;
+  color: #626d72;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+  margin: 0;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+.check__item:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.check__item > * {
+  margin: 10px 0;
+}
+.check__item > *:first-child {
+  margin-top: 0;
+}
+.check__item > *:last-child {
+  margin-bottom: 0;
+}
+.check__item:last-child {
+  border-bottom: none;
+}
+.check__title {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.check__text {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.check__cash {
+  float: right;
+  margin: 0;
+  text-align: right;
+}
+.check__total {
+  font-weight: 600;
+}
+.check__buy {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+.check__buy:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.check__buy_title {
+  font-weight: 300;
+  margin: 0;
+}
+.check__service {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+.check__service_title {
+  font-weight: 300;
+  margin: 0;
+}
+.check__service_info:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.header {
+  overflow: hidden;
+  padding: 20px 0;
+}
+.header__logo {
+  display: block;
+}
+.header__logo_img {
+  display: block;
+}
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+/* Max width 767px */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .navigation__item {
+    display: block;
+  }
+  .header__container {
+    width: auto;
+  }
+  .header__search {
+    display: none;
+  }
+  .blocked__container {
+    padding: 10px;
+  }
+  .blocked__container * {
+    width: auto;
+  }
+}

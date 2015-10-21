@@ -1,0 +1,74 @@
+
+@border-radius-base: 0;
+/*----fonts----*/
+@brand-font: 'Arial', serif;
+@font-family-base: 'Arial', sans-serif;
+@font-size-base: 14px;
+/*---general---*/
+@grid-columns: 12;
+@container-md: 960px;
+@container-lg: 1200px;
+@site-column: 80px;
+@site-padding: 10px;
+/*---colors----*/
+@white: #fff;
+@gray-light: #f2f2f2;
+@gray: #cccccc;
+@gray-dark: #c4ccd2;
+@black: #333;
+
+@brand-color: #e1eff1;
+@brand-color-dark: #626d72;
+
+@red: #e2383f;
+
+@body-bg: @gray;
+@input-color:@gray;
+@text-color: @brand-color-dark;
+
+
+body,html{
+    background-color: @brand-color;
+    font-family: @font-family-base;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*-----placeholder-----*/
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;}
+input:-moz-placeholder      {text-overflow:ellipsis;}
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+
+::-webkit-input-placeholder {color: @gray-dark;}
+::-moz-placeholder          {color: @gray-dark;}/* Firefox 19+ */
+:-moz-placeholder           {color: @gray-dark;}/* Firefox 18- */
+:-ms-input-placeholder      {color: @gray-dark;}
+
+
+.rotate-180{
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
+}
+

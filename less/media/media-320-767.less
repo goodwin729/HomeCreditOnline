@@ -1,0 +1,24 @@
+/* Max width 767px */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .navigation {
+        &__item {
+            display: block;
+        }
+    }
+    .header {
+        &__container {
+            width: auto;
+        }
+        &__search {
+            display: none;
+        }
+    }
+    .blocked {
+        &__container {
+            padding: @site-padding;
+            * {
+                width: auto;
+            }
+        }
+    }
+}

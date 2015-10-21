@@ -1,0 +1,77 @@
+.check {
+    background-color: @white;
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0 @site-padding * 2;
+    }
+    &__item {
+        border-bottom: @gray 1px solid;
+        color: @text-color;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 15px;
+        margin: 0;
+        padding: (@site-padding + @site-padding / 2) 0;
+        text-transform: uppercase;
+        .clearfix;
+        > * {
+            margin: @site-padding 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__title {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    &__text {
+        font-size: 11px;
+        line-height: 15px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    &__cash {
+        float: right;
+        margin: 0;
+        text-align: right;
+    }
+    &__total {
+        font-weight: 600;
+    }
+    &__buy {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 15px;
+        overflow: hidden;
+        padding: 0;
+        .clearfix;
+        &_title {
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+    &__service {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 15px;
+        overflow: hidden;
+        padding: 0;
+        &_title {
+            font-weight: 300;
+            margin: 0;
+        }
+        &_info {
+            .clearfix;
+        }
+    }
+}

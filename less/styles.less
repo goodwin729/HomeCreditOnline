@@ -1,0 +1,67 @@
+
+a{
+    color: @gray-dark;
+    &:hover{
+        color: @brand-color-dark;
+        text-decoration: none;
+        transition: 0.25s;
+    }
+    &:not(:hover) {
+        transition: 0.25s;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-control {
+    box-shadow: none;
+}
+
+.left{ float: left;}
+.right{ float: right;}
+label{
+    font-weight: normal;
+}
+textarea:focus,
+input:focus{
+    box-shadow: none;
+}
+*:focus,
+*:visited,
+a:focus{
+    outline: none;
+}
+/*---------------*/
+
+mark{
+    background: none;
+    color: @brand-color;
+    padding: 0 @site-padding / 2;
+}
+.center-el{ text-align: center;}
+
+.container {
+    margin: 0 auto;
+    padding: 0 @site-padding;
+    width: 980px;
+}
+
+.sidebar {
+    float: left;
+    margin-right: @site-padding;
+    width: 250px;
+}
+.content {
+    overflow: hidden;
+}
+
+@import "variables.less";
+
+@import "btn.less";
+@import "check.less";
+@import "header.less";
+
+@import "./media/media-320-767.less";
