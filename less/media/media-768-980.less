@@ -1,0 +1,51 @@
+/* Max width 767px */
+@media only screen and (min-width: 768px) and (max-width: 980px){
+    .container {
+        width: auto;
+    }
+    .btn {
+        &-min {
+            margin-bottom: @site-padding;
+            width: auto;
+        }
+        &-close {
+            height: @site-padding * 2;
+            width: @site-padding * 2;
+        }
+    }
+    .popUp {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+    .modal {
+        left: 3%;
+        margin-left: 0;
+        padding-left: @site-padding * 2;
+        padding-right: @site-padding * 2;
+        width: 94%;
+    }
+    .step {
+        &__img {
+            width: @site-padding * 10;
+        }
+        &__item {
+            &:before {
+                top: @site-padding * 4;
+            }
+            &:after {
+                top: @site-padding * 4 + @site-padding / 2;
+            }
+        }
+    }
+    .input {
+        &-big {
+            width: calc(~"100% - " @site-padding * 2);
+        }
+    }
+    .form {
+        &__value {
+            width: auto;
+        }
+    }
+}

@@ -11,6 +11,62 @@
     <![endif]-->
 <body>
 
+<!--modal-HOW-IT-WORK__--
+<div class="modal">
+    <a href="#" title="" class="btn btn-close">&nbsp;</a>
+
+    <div class="modal__header">
+        <img src="../img/logo-sub.png" alt="" class="modal__header_logo">
+    </div>
+
+    <div class="step">
+        <h2 class="step__title">как это работает:</h2>
+        <ul class="step__list">
+            <li class="step__item">
+                <img src="../img/001.jpg" alt="" class="step__img">
+                <p class="step__text">Выберите способ  платежа «ОПЛАТИТЬ ПРИ ПОЛУЧЕНИИ»</p>
+            </li>
+            <li class="step__item">
+                <img src="../img/002.jpg" alt="" class="step__img">
+                <p class="step__text">Заполните данные о себе и подтвердите согласие с условиями предоставления услуги</p>
+            </li>
+            <li class="step__item">
+                <img src="../img/003.jpg" alt="" class="step__img">
+                <p class="step__text">Магазин получает информацию о вашей покупке с платежом при получении и отправляет ваш заказ</p>
+            </li>
+            <li class="step__item">
+                <img src="../img/004.jpg" alt="" class="step__img">
+                <p class="step__text">Вы оплачиваете покупку и стоимость услуги при встрече с курьером или при получении заказа в пунктах выдачи</p>
+            </li>
+        </ul>
+    </div>
+
+    <p class="modal__mark">Стоимость услуги 1,5% (минимум 50 рублей)</p>
+
+    <div class="benefits">
+        <h2 class="benefits__title">Преимущества:</h2>
+        <ul class="benefits__list">
+            <li class="benefits__item">Онлайн покупки без предоплаты</li>
+            <li class="benefits__item">Не нужно вводить данные карты или электронного кошелька</li>
+            <li class="benefits__item">Возможность платить по факту доставки</li>
+        </ul>
+    </div>
+
+</div>
+--__modal-HOW-IT-WORK-->
+
+<!--modal-loader__--
+<div class="popUp">
+    <div class="popUp__loader">
+        <img src="../img/loader.png" alt="" class="popUp__loader_img">
+    </div>
+    <p class="popUp__text">
+        Пожалуйста, подождите.<br>
+        Мы проверяем возможность предоставления вам услуги.
+    </p>
+</div>
+--__modal-loader-->
+
 <div class="container">
 
     <div class="header">
@@ -38,7 +94,7 @@
                 </li>
                 <li class="check__item">
                     <div class="check__buy">
-                        <p class="check__cash">158,99 $<br>2 705.00 руб.</p>
+                        <p class="check__cash check__buy_cash">158,99 $<br>2 705.00 руб.</p>
                         <p class="check__text">Стоимость покупки:</p>
                     </div>
                     <div class="check__service">
@@ -58,52 +114,242 @@
             </ul>
         </div>
 
+        <a href="#" title="" class="btn btn-how">Как это работает</a>
+
     </div>
 
-    <div class="content"> 
+    <div class="content">
 
-        <div class="check">
-            <ul class="check__list">
-                <li class="check__item">
-                    <h3 class="check__title">ваш заказ</h3>
-                </li>
-                <li class="check__item">
-                    <p class="check__info">4G Lte смартфон Nubia Z9 Max, 5.5" 2GB RAM + 16GB ROM</p>
-                    <p class="check__info">5.5 '' FHD Elephone P8000 смартфонов Android 5.1 MTK6753 </p>
-                </li>
-                <li class="check__item">
-                    <div class="check__buy">
-                        <p class="check__cash">158,99 $<br>2 705.00 руб.</p>
-                        <p class="check__text">Стоимость покупки:</p>
+        <form class="form" id="personal-data"  action="" method="post">
+            <p class="form__text">
+                Чтобы оплатить вашу покупку при получении, заполните данные о себе и подтвердите
+                с помощью смс кода согласие с условиями предоставления услуги.
+            </p>
+            <ul class="form__list">
+                <li class="form__item">
+                    <label class="form__label">фамилия</label>
+                    <div class="form__value">
+                        <div class="input input-big input-valid">
+                            <input type="text" name="FirstName" class="input__item" placeholder="Введите вашу фамилию">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
                     </div>
-                    <div class="check__service">
-                        <h4 class="check__service_title">Цена услуги</h4>
-                        <div class="check__service_info">
-                            <p class="check__cash">150.00 руб.</p>
-                            <p class="check__text">"Оплати при получении":</p>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">Имя</label>
+                    <div class="form__value">
+                        <div class="input input-big input-invalid">
+                            <input type="text" name="SecondName" class="input__item">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
+                    </div>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">отчество</label>
+                    <div class="form__value">
+                        <div class="input input-big">
+                            <input type="text" name="MiddleName" class="input__item">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
+                    </div>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">пол</label>
+                    <div class="form__value">
+                        <div class="radio">
+                            <input type="radio">
+                            <img src="../img/ico-man.png" alt="" class="radio__image">
+                            <span class="radio__text">Мужской</span>
+                        </div>
+                        <div class="radio radio-active">
+                            <input type="radio">
+                            <img src="../img/ico-woman.png" alt="" class="radio__image">
+                            <span class="radio__text">Женский</span>
                         </div>
                     </div>
                 </li>
-                <li class="check__item">
-                    <div class="check__total">
-                        <p class="check__cash">2 855 РУБ.</p>
-                        <p class="check__text">итого:</p>
+                <li class="form__item">
+                    <label class="form__label">мобильный телефон</label>
+                    <div class="form__value">
+                        <div class="input input-med">
+                            <input type="text" class="input__item" name="telephone">
+                        </div>
+                        <span class="form__tooltip">Введите ваш номер мобильного телефона</span>
                     </div>
                 </li>
+                <li class="form__item">
+                    <label class="form__label">e-mail</label>
+                    <div class="form__value">
+                        <div class="input input-big">
+                            <input type="text" class="input__item">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
+                    </div>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">дата рождения</label>
+                    <div class="form__value">
+                        <div class="input input-med">
+                            <input type="text" class="input__item">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
+                    </div>
+                </li>
+                <li class="form__item">
+                    <label class="form__label">серия и номер паспорта</label>
+                    <div class="form__value">
+                        <div class="input input-min">
+                            <input type="text" class="input__item" name="PassportSeries">
+                        </div>
+                        <div class="input input-med">
+                            <input type="text" class="input__item">
+                        </div>
+                        <span class="form__tooltip">sdfdsf</span>
+                    </div>
+                </li>
+                <li class="form__item form__item-result">
+                    <button class="btn form__btn"  name="send">Отправить заявку</button>
+                </li>
             </ul>
+        </form>
+
+        <div class="alert">
+            <img src="../img/ico-check.png" alt="" class="alert__icon">
+            <p class="alert__text">
+                Спасибо. Заказ <b>№315102</b> подтвержден.<br>
+                При получении необходимо оплатить <b>2 705.00 руб.</b>, включая стоимость услуги.<br>
+                Итого: <b>2 855.00 руб.</b><br>
+                Скоро с вами свяжется курьерская служба.
+            </p>
+        </div>
+
+        <div class="alert">
+            <div class="alert__content">
+                <img src="../img/ico-set.png" alt="" class="alert__icon">
+                <p class="alert__text">
+                    К сожалению, у нас технические проблемы.<br>
+                    Попробуйте другой способ оплаты или обратитесь к нам позднее.
+                </p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <div class="alert__content">
+                <img src="../img/ico-lock.png" alt="" class="alert__icon">
+                <p class="alert__text">
+                    К сожалению, в вашем регионе<br>
+                    услуга «Оплати при получении» не может быть предоставлена.<br>
+                    Спасибо за проявленный интерес!
+                </p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <div class="alert__content">
+                <img src="../img/ico-pack.png" alt="" class="alert__icon">
+                <p class="alert__text">
+                    К сожалению, услуга «Оплати при получении»<br>
+                    не предоставляется на следующие категории товаров:<br>
+                    <b>Женская одежда, Одежда для мужчин, Обувь и сумки,<br>
+                    Дом и сад, Спорт и активный отдых</b><br><br>
+
+                    Если вы хотите воспользоваться услугой, то выберите,<br>
+                    пожалуйста, на сайте продавца товары из следующих категорий:<br>
+                    <b>Телефоны и аксессуары, Компьютеры и аксессуары, Электроника,<br>
+                    Автотовары, Игры и аксессуары</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="alert alert-congrats">
+            <p class="alert__text">
+                Поздравляем Вы можете воспользоваться услугой «Оплати при получении»!<br>
+                Для продолжения вам нужно принять условия оферты.
+            </p>
+            <div class="scroll">
+                <div class="scroll__content">
+                    <span class="scroll__line">
+                        <span class="scroll__pane">&nbsp;</span>
+                    </span>
+                    <p>
+                        Настоящий документ является составной частью Договора, наряду с Индивидуальными условиями Договора потребительского кредита (далее – «Индивидуальные условия по Кредиту») и Индивидуальными условиями Договора потребительского кредита по карте (далее – «Индивидуальные условия по Кредиту по Карте»). Настоящий Договор заключен между ООО «ХКФ Банк» (далее – Банк) и физическим лицом (далее – Заемщик, Клиент), сведения о которых указаны в Индивидуальных условиях по Кредиту.
+                        I. Предмет Договора 1. В соответствии со ст.421 ГК РФ Договор является смешанным и определяет порядок:
+                        - предоставления целевого потребительского кредита (далее - Кредит) путем его зачисления на Счет и совершения операций по Счету;
+                        -обслуживания Текущего счета, в том числе предоставления кредитов (далее – Кредит по Карте) в случае недостаточности на Текущем счете денежных средств для совершения операции с использованием выпущенной к нему банковской расчетной карты (далее - Карта).
+                        Клиент обязуется возвращать полученные в Банке кредиты, уплачивать проценты за пользование ими, а также оплачивать оказанные ему услуги согласно условиям Договора.
+                        1.1. Банковские счета. По Договору Банк открывает Клиенту: - банковский Cчет в рублях, номер которого указан в Индивидуальных условиях по Кредиту, используемый исключительно для операций по выдаче и погашению потребительского Кредита, для проведения расчетов Клиента с Банком, Торговой организацией (далее - ТО), а также с иными лицами, указанными в Договоре или дополнительных
+                        соглашениях к нему; - банковский Текущий счет в рублях, номер которого указан в
+                        разделе «Об Индивидуальных условиях Договора потребительского Кредита по Карте» Индивидуальных условий по Кредиту, используемый Клиентом для совершения расходных операций исключительно с использованием Карты и погашения Задолженности по Кредитам по Карте.
+                        Банк обязуется принимать и зачислять поступающие на указанные счета денежные средства, выполнять распоряжения Клиента о перечислении и выдаче соответствующих сумм со счетов и проведении других операций по счетам в порядке и на условиях, установленных Договором, законодательством РФ,
+                        установленными в соответствии с ним банковскими правилами и применяемыми в банковской практике обычаями делового оборота.
+                        Открытие/закрытие счетов, а также все операции по ним,
+                        необходимые для предоставления, погашения и обслуживания
+                        выданных кредитов осуществляются Банком бесплатно с
+                        момента заключения Договора до момента полного погашения
+                        Заемщиком задолженности по соответствующим кредитам.
+                        Иные виды банковского обслуживания, включая иные операции
+                        по счетам Клиента, открытым в Банке, являются
+                        самостоятельными услугами, за оказание которых Банком может
+                        взиматься комиссия с Клиента согласно действующим Тарифам
+                        ООО «ХКФ Банк» по банковскому обслуживанию клиентов-
+                        физических лиц (Тарифы), которые являются общедоступными и
+                        размещаются на местах оформления кредитной документации и
+                        в сети Интернет на официальном сайте Банка www.homecredit.ru
+                        (далее - Сайт Банка).
+                        Если в день заключения Договора Клиент уже имеет
+                        открытые в Банке Счет или Текущий счет, то новые
+                        банковские счета не открываются, а для целей исполнения
+                        Договора используются ранее открытые счета, при этом условия
+                        Договора являются дополнениями к ранее заключенным
+                        договорам банковского счета.
+                        Операции по Текущему счету могут проводиться Клиентом
+                        только после того как он решил воспользоваться Картой,
+                        полученной от Банка, для чего обратился в Банк для выполнения
+                        специальной процедуры Активации Карты. Без Активации Карты
+                        проведение Клиентом с ее помощью операций по Текущему счету
+                        невозможно. Для Активации Карты Клиенту необходимо
+                        обратиться к Уполномоченному Банком лицу (далее – УБЛ) –
+                        физическому лицу, уполномоченному Банком осуществлять
+                        взаимодействие с Клиентом при оформлении документов в
+                        рамках Договора, либо по телефону Банка. Банк вправе в любое
+                        время по собственному усмотрению аннулировать
+                        неактивированную или заблокированную Карту.
+                        Банк вправе отказать в Активации Карты в случаях,
+                        установленных законодательством РФ и Договором при наличии
+                        любого из следующих обстоятельств: сообщенные Клиентом о
+                        себе сведения являются недостоверными или не соответствуют
+                        полученным Банком ранее; в случаях, когда у Банка имеются
+                        основания полагать, что Клиент может не исполнить свои
+                        обязательства по Договору
+                    </p>
+                </div>
+            </div>
+
+            <div class="form">
+                <p class="form__text">
+                    Для принятия оферты введите код из смс,<br>
+                    которое было отправлено на ваш номер <b>«8 (700) 315-10-26»</b>
+                </p>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <div class="form__value">
+                            <div class="input input-min">
+                                <input type="text" class="input__item">
+                            </div>
+                            <button class="btn btn-min btn-gray">ОТПРАВИТЬ СМС С КОДОМ ПОВТОРНО</button><button class="btn btn-min">подтвердить</button>
+                        </div>
+                    </li>
+                    <li class="form__item">
+                        <button class="btn form__btn">Отправить заявку</button>
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
     </div>
 
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    $( ".header__btn-menu" ).click(function() {
-        $( '.navigation' ).toggleClass( "open" );
-    });
-</script>
 
 </body>
 </html>

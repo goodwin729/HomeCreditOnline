@@ -1,0 +1,48 @@
+.radio {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    &__image {
+        float: left;
+        margin-top: 3px;
+    }
+    &__text {
+        display: block;
+        overflow: hidden;
+        padding: @site-padding / 2 @site-padding @site-padding / 2 @site-padding * 4;
+        position: relative;
+        &:before {
+            content: "";
+            background-color: @gray-light;
+            border: @gray 1px solid;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px @gray inset;
+            display: block;
+            height: 18px;
+            left: @site-padding;
+            position: absolute;
+            top: @site-padding / 2;
+            width: 18px;
+        }
+        &:after {
+            content: "";
+            background-color: @red;
+            border-radius: 50%;
+            display: none;
+            height: @site-padding;
+            left: @site-padding + @site-padding / 2;
+            position: absolute;
+            top: @site-padding;
+            width: @site-padding;
+            z-index: 5;
+        }
+    }
+    input {
+        display: none;
+    }
+    &-active {
+        .radio__text:after {
+            display: block;
+        }
+    }
+}

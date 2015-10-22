@@ -1,0 +1,66 @@
+.input {
+    background-color: @white-dark;
+    border: @gray-light 1px solid;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px @gray inset;
+    float: left;
+    padding: @site-padding / 2 @site-padding;
+    position: relative;
+    &__item {
+        background-color: @white-dark;
+        border: transparent 1px solid;
+        line-height: 21px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    &-valid {
+        &:before {
+            content: "";
+            background: url("../img/check-green.png") no-repeat 0 0;
+            display: block;
+            height: 12px;
+            position: absolute;
+            right: -@site-padding * 2;
+            top: @site-padding;
+            width: 12px;
+            z-index: 5;
+        }
+    }
+    &-invalid {
+        border-color: @red-dark;
+        color: @red-dark;
+        &:before {
+            content: "";
+            background: url("../img/dell.png") no-repeat 0 0;
+            display: block;
+            height: 12px;
+            position: absolute;
+            right: -@site-padding * 2;
+            top: @site-padding;
+            width: 12px;
+            z-index: 5;
+        }
+        .input__item {
+            color: @red-dark;
+        }
+    }
+    &-wide {
+        width: auto;
+    }
+    &-big {
+        width: 280px;
+    }
+    &-med {
+        width: 130px;
+    }
+    &-min {
+        width: 60px;
+    }
+    & + & {
+        margin-left: @site-padding;
+    }
+    & + .btn {
+        margin-left: @site-padding;
+    }
+}

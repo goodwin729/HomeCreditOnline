@@ -1,0 +1,26 @@
+.popUp {
+    background-color: @brand-color-dark;
+    color: @white;
+    font-family: @brand-font;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 35px;
+    left: 50%;
+    margin-left: -480px;
+    padding: @site-padding * 2;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40%;
+    width: 960px;
+    z-index: 15;
+    &__loader {
+        margin: @site-padding;
+        &_img {
+            .spin;
+        }
+    }
+    &__text {
+        padding: @site-padding;
+    }
+}

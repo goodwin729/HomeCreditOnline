@@ -1,7 +1,7 @@
 
 @border-radius-base: 0;
 /*----fonts----*/
-@brand-font: 'Arial', serif;
+@brand-font: 'PFDinTextCondPro-light', 'Arial';
 @font-family-base: 'Arial', sans-serif;
 @font-size-base: 14px;
 /*---general---*/
@@ -12,15 +12,17 @@
 @site-padding: 10px;
 /*---colors----*/
 @white: #fff;
-@gray-light: #f2f2f2;
-@gray: #cccccc;
-@gray-dark: #c4ccd2;
+@white-dark: #f2f2f2;
+@gray-light: #eee;
+@gray: #ccc;
+@gray-dark: #999;
 @black: #333;
 
 @brand-color: #e1eff1;
 @brand-color-dark: #626d72;
 
 @red: #e2383f;
+@red-dark: #c62221;
 
 @body-bg: @gray;
 @input-color:@gray;
@@ -29,7 +31,7 @@
 
 body,html{
     background-color: @brand-color;
-    font-family: @font-family-base;
+    font-family: @brand-font;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -55,13 +57,37 @@ input:-ms-input-placeholder {text-overflow:ellipsis;}
 :-ms-input-placeholder      {color: @gray-dark;}
 
 
-.rotate-180{
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+.rotate-45{
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+.rotate-90{
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.rotate-315{
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.spin {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 .clearfix {
     &:after {
         content: "";

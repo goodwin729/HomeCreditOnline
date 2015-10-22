@@ -1,0 +1,28 @@
+.scroll {
+    background-color: @gray-light;
+    margin: @site-padding;
+    padding: @site-padding * 3;
+    position: relative;
+    &__line {
+        background-color: @white;
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        width: @site-padding / 2;
+    }
+    &__pane {
+        background-color: @red;
+        display: block;
+        height: @site-padding * 6;
+        width: 100%;
+    }
+    &__content {
+        font-size: 13px;
+        height: 275px;
+        line-height: 15px;
+        overflow: hidden;
+        position: relative;
+        padding-right: @site-padding * 2;
+    }
+}
